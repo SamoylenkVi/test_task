@@ -1,5 +1,6 @@
 
 ### [Макет в Figma](https://www.figma.com/file/3gx3MQmQMnajVGcc03UW4g/)
+### [Live demo](https://samoylenkvi.github.io/test_task/)
 
 
  Основные команды для работы
