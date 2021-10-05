@@ -1,0 +1,46 @@
+//Color
+$white: #ffffff;
+$black: #000000;
+$base-color-dark: #a1a1aa;
+$base-color-light: #52525b;
+$top-header-light: #f9fafb;
+$top-header-dark: #27272a;
+$button-grey: #71717a;
+$active-background-light: #ede9fe;
+$active-background-dark: #3f3f46;
+$border-light: #d4d4d8;
+$active-light: #7c3aed;
+$background-color-dark: #18181b;
+$purple: #a855f7;
+$lime: #84cc16;
+$pink: #ec4899;
+$border-grey: #e5e7eb;
+$status-green: #22c55e;
+$inbox-color: #8b5cf6;
+
+//Font
+$family-inter: "Inter", "Roboto", sans-serif;
+$semibold-font-weight: 600;
+$medium-font-weight: 500;
+$regular-font-weight: 400;
+
+//Size
+$base-font-size: 14px;
+$button-font-size: 12px;
+$inbox-font-size: 10px;
+
+//line-height
+$base-line-height: 20px;
+$small-line-height: 16px;
+$inbox-line-height: 14px;
+
+// Viewports
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width: 320px;
+
+// Padding
+$mobile-padding: 24px;
+$tablet-padding: 15px;
+
+$transition: all 300ms linear;

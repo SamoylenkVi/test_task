@@ -1,0 +1,101 @@
+.profile {
+	background-color: $top-header-light;
+
+	@include dark {
+		background-color: $top-header-dark;
+	}
+}
+.profile__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 88px;
+	transition: $transition;
+}
+
+.profile__picture-wrapper {
+	height: 40px;
+	position: relative;
+}
+
+.profile__picture-wrapper picture {
+	display: block;
+	width: 40px;
+}
+
+.profile__picture-wrapper img {
+	border-radius: 50%;
+}
+
+.profile__user-status {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border: 2px solid $white;
+	border-radius: 50%;
+	background-color: $status-green;
+	bottom: 1px;
+	right: 0;
+}
+
+.profile__information {
+	padding: 5px 16px 3px;
+	min-width: 170px;
+	transition: $transition;
+	transition-duration: 1s;
+}
+
+.profile__information p {
+	margin: 0;
+}
+
+.profile__profession {
+	font-size: $button-font-size;
+	line-height: $small-line-height;
+}
+
+.profile__button-open {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	margin-left: auto;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	&:active {
+		.profile__button-icon,
+		.profile__button-icon::after,
+		.profile__button-icon::before {
+			border-color: $active-light;
+		}
+	}
+}
+
+.profile__button-icon,
+.profile__button-icon::before,
+.profile__button-icon::after {
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	width: 0.5px;
+	height: 0.5px;
+	transform: translate(-50%, -50%);
+	border: 2px solid $base-color-dark;
+	border-radius: 50%;
+}
+
+.profile__button-icon::before,
+.profile__button-icon::after {
+	content: "";
+}
+
+.profile__button-icon::before {
+	transform: translate(-50%, -9px);
+}
+
+.profile__button-icon::after {
+	transform: translate(-50%, 5px);
+}

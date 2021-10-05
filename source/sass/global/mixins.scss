@@ -1,0 +1,49 @@
+@mixin font-options($family, $size, $line-height, $weight, $color) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin remove-indentation {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin list-default-remove {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link-default-remove($color: inherit) {
+  text-decoration: none;
+  outline: none;
+  color: $color;
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin dark {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}
+

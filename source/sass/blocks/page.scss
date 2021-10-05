@@ -1,0 +1,12 @@
+.page {
+  @include font-options($family-inter, $base-font-size, $base-line-height, $medium-font-weight, $base-color-light);
+  background-color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @include dark {
+    background-color: $background-color-dark;
+    color: $base-color-dark;
+  }
+}

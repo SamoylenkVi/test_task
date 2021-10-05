@@ -1,0 +1,98 @@
+.project-navigation {
+	min-height: 330px;
+	padding: 35px 0;
+}
+
+.project-navigation svg {
+	fill: none;
+	flex-shrink: 0;
+}
+
+.project-navigation__list {
+	@include list-default-remove;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 5px 16px;
+	transition: $transition;
+
+	&--close {
+		opacity: 0;
+	}
+}
+
+.project-navigation__item {
+	position: relative;
+	margin-bottom: 24px;
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 8px;
+		height: 8px;
+		background-color: $purple;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		border-radius: 2px;
+	}
+
+	&--web {
+		&::before {
+			background-color: $lime;
+		}
+	}
+
+	&--editing {
+		&::before {
+			background-color: $pink;
+		}
+	}
+}
+
+.project-navigation > a {
+	@include link-default-remove;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px 16px;
+	margin-bottom: 14px;
+	cursor: pointer;
+
+	&:active {
+		color: $active-light;
+		background-color: $active-background-light;
+		border-radius: 4px;
+		transition: none;
+
+		@include dark {
+			color: $white;
+			background-color: $active-background-dark;
+		}
+	}
+}
+
+.project-navigation span {
+	padding-left: 8px;
+}
+
+.project-navigation__item a {
+	@include link-default-remove;
+	padding: 0 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	&:active {
+		color: $active-light;
+		background-color: $active-background-light;
+		border-radius: 4px;
+		transition: none;
+
+		@include dark {
+			color: $white;
+			background-color: $active-background-dark;
+		}
+	}
+}

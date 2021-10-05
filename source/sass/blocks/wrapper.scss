@@ -1,0 +1,9 @@
+.wrapper {
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @include desktop {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
